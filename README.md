@@ -1,2 +1,2 @@
-# SeSAC_2GD
+# SeSAC_2GD!
 SeSAC 강동

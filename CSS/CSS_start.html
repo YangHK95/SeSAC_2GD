@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 공부</title>
+  <link rel="stylesheet" href="./style01.css">
+  <style>
+    /*
+    색깔 지정방법 3가지
+    1. 색깔 이름 : red , pink, aliceblue, ....
+    2. rgd(숫자1,숫자2,숫자3) - 구글링
+      -숫자1,2,3 은 256개 의 수로 이루어져 있습니다.(0~255)
+    3.#------ 여섯자리 숫자를 쓰면 됩니다. -구글링
+      단,16 진수로 이루어진 숫자.
+      16진수 : 0~9,a,b,c,d,e,f
+    */
+    div{
+      background-color:red;
+    }
+    h2{
+      background-color: rgb(255, 0, 255);
+      color: white;
+    }
+    h2{
+      background-color:blue; color:white;
+    }
+    h3{
+      background-color:black;
+      color:white;
+    }
+  </style>
+ 
+</head>
+<body>
+  <h1>css style 적용 방법3가지</h1>
+  <div style="background-color: aqua;">인라인 방식</div>
+  <p>내장 스타일 태그 방식</p>
+  <ul>
+    <li>외부 스타일 시트</li>
+    <li>방식</li>
+  </ul>
+  <h2>내장 스타일 vs. link 방식 h2</h2>
+
+  <h1 style="background-color: green; color: white;">인라인 방식으로 배경을 초록,글자를 흰색</h1>
+  <h2>내장 방식으로 방식으로 배경을 파랑,글자를 흰색</h2>
+  <p>링크 방식으로 배경을 빨강,글자를 흰색</p>
+  <h3>배경을 검정 글자를 흰색</h3>
+</body>
+</html>

@@ -1,0 +1,42 @@
+  form {
+  width: 400px;
+  }
+  /* hover */
+  h3:hover{
+    background-color: black;
+    color: white;
+  }
+  /* focus */
+  textarea {
+  width: 100%;
+  }
+  textarea:active{
+    background-color: #f96666;
+  }
+  /* checked */
+    #red:checked + label{
+    background-color: red;
+    color: white;
+  }
+   #파랑:checked + label{
+    background-color: blue;
+    color: white;
+   }
+   #노랑:checked + label{
+    background-color: yellow;
+    color: black;
+   }
+  /* active */
+  button {
+  float: right;
+  padding: 5px 15px;
+  background-color: #f96666;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  }
+  button:focus{
+    background-color: grey;
+    color: #f96666;
+  }

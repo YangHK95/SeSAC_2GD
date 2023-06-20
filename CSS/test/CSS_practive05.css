@@ -1,0 +1,17 @@
+.stripes > *{
+  background-color: navy;
+  color: white;
+}
+
+.stripes > div:nth-child(4n+2){
+  background-color: yellow;
+  color: navy;
+}
+
+.box::before{
+  content: "택시";
+}
+
+.box::after{
+  content: "빨리";
+}

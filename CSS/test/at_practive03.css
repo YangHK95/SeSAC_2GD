@@ -1,0 +1,9 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: hotpink;
+  margin: calc(50% - 50px) auto;
+  text-align: center;
+  border: 1px;
+  border-width: 100px;
+}

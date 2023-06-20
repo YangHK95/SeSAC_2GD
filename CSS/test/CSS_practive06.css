@@ -1,0 +1,40 @@
+[disabled]{
+  background-color: red;
+}
+
+[placeholder="이름"]{
+  background-color: orange;
+}
+
+input:not([placeholder]){
+  background-color: blue;
+}
+
+h1{
+  text-align: center;
+  color: green;
+}
+
+table {
+  width: 100%; height: 600px;
+}
+
+body{
+  background-color: rgb(236, 179, 190);
+}
+
+table td{
+  text-align: right;
+}
+
+tr > *:nth-child(7){
+  color: blue
+}
+
+tr> *:nth-child(1){
+  color: red
+}
+
+table tr .holiday{
+  color: red;
+}

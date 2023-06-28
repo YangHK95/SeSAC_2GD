@@ -1,21 +1,60 @@
+/* transition vs. animation - transition - hover, onclick, active, 등의 이벤트에
+의해 발생됨 - animation - '중간 스텝' 을 지정해 보다 세밀한 스타일 전환 가능 -
+keyframes 를 사용 */ .box { width: 100px; height: 100px; background: aqua;
+position: relative; animation-name: box; animation-duration: 2s;
+animation-iteration-count: infinite; animation-timing-function: linear;
+animation-delay: 3s; } @keyframes box { 0% { left: 0px; } 25% { left: 100px; }
+50% { left: 200px; } 75% { left: 100px; } 100% { left: 0; } } .ball { position:
+relative; width: 100px; height: 100px; border-radius: 50%; background-color:
+#000; /* 단축 속성 */ animation: bounce1 1s ease-out infinite alternate; }
+@keyframes bounce1 { to { top: 0px; } from { top: 300px; } } .ball2 { width:
+50px; height: 50px; background-color: coral; position: absolute; left: 200px;
+border-radius: 50%; /* animation */ animation: bounce2 5s infinite; } @keyframes
+bounce2 { to, from { bottom: 0px; animation-timing-function: ease-out;
+background-color: yellow; } 50% { bottom: 300px; animation-timing-function:
+ease-in; background-color: red; } } 코딩온_유진형 3시간 전 반응형 html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>요소 가운데 정렬</title>
+    <title>responsive web</title>
+    <link rel="stylesheet" href="./attr8_mediaquery.css" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <h2>핸드폰용 hello world</h2>
+  </body>
+</html>
+
+코딩온_유진형 3시간 전 반응형 CSS body { background-color: aquamarine; } h2 {
+display: none; } @media screen and (max-width: 700px) { body { background-color:
+coral; } h1 { color: white; } } @media screen and (min-width: 500px) { body {
+background-color: steelblue; } } @media (max-width: 300px) { body {
+background-color: yellowgreen; } h2 { display: block; } h1 { display: none; } }
+/* 반응형 웹페이지를 만들 때 핸드폰용 페이지를 만들지, 컴퓨터용 페이지를 만들지
+결정한 후 먼저 만드는 페이지가 큰 화면이라면 max-width 먼저 만드는 페이지가 작은
+화면이라면 min-width 를 사용 */ 코딩온_유진형 4분 전 요소 가운데 정렬하기
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소 가운데 정렬하기</title>
     <style>
       .parent {
         width: 300px;
         height: 300px;
-        background-color: aqua;
+        background-color: aquamarine;
       }
+
       .child {
         width: 100px;
         height: 100px;
         background-color: hotpink;
       }
 
+      /* position 과 margin: auto */
       .parent1 {
         position: relative;
       }
@@ -28,14 +67,45 @@
         top: 0;
         bottom: 0;
       }
+
+      /* flex 이용한 가운데 정렬 */
+      .parent2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .parent2 > .child {
+      }
+
+      /* position & transform */
+      .parent3 {
+        position: relative;
+      }
+      .parent3 > .child {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
-
   <body>
     <h1>div 안에 div 가운데 정렬하기</h1>
 
-    <h3>1.position과 margin:auto</h3>
-    <div class="parent parent1"></div>
-    <div class="chlid"></div>
+    <h3>1. position과 margin:auto</h3>
+    <div class="parent parent1">
+      <div class="child"></div>
+    </div>
+
+    <h3>2. flex</h3>
+    <div class="parent parent2">
+      <div class="child"></div>
+    </div>
+
+    <h3>3. position 과 transform</h3>
+    <div class="parent parent3">
+      <div class="child"></div>
+    </div>
   </body>
 </html>

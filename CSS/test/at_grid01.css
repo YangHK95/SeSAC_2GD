@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.container .item1 {
+  background: linear-gradient(#f94144, #43aa8b);
+  grid-column: 1 / span 4;
+}
+.container .item2 {
+  background: linear-gradient(#43aa8b, #f3722c);
+
+  grid-row: 2 / span 2;
+}
+.container .item3 {
+  background: linear-gradient(#43aa8b, #f9c74f, #f8961e);
+  grid-column: 2 / span 2;
+}
+.container .item4 {
+  background: linear-gradient(#43aa8b, #4444ff, #f3722c);
+  grid-column: 4;
+  grid-row: 2 / span 2;
+}
+.container .item5 {
+  background: linear-gradient(#f8961e, #f3722c);
+}
+.container .item6 {
+  background: linear-gradient(#f8961e, #90be6d, #f3722c);
+}
+.container .item7 {
+  background: linear-gradient(#f3722c, #4444ff);
+  grid-row: 4;
+  grid-column: 1 / span 4;
+}

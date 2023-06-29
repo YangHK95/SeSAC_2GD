@@ -1,0 +1,54 @@
+li {
+  list-style: none;
+}
+
+.inner li a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1500px;
+  margin: 0;
+  height: 100%;
+}
+header {
+}
+header .util-menu {
+}
+
+header .util-menu .inner {
+}
+
+header .util-menu .inner ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+header .util-menu .inner ul li {
+  margin: 5px;
+}
+
+.main-menu {
+}
+
+.main-menu .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu .inner .logo {
+  margin-left: 200px;
+}
+.main-menu .inner .menu {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.main-menu .inner .menu li {
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0 40px;
+}

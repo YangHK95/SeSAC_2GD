@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NanumBarunGothic", sans-serif;
+}
 li {
   list-style: none;
 }
@@ -9,11 +15,10 @@ li {
 .inner {
   width: 1500px;
   margin: 0;
-  height: 100%;
 }
 
 body {
-  display: block;
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
 }
 header {
   position: relative;
@@ -21,6 +26,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
+  display: block;
 }
 header .util-menu {
 }
@@ -37,16 +43,21 @@ header .util-menu .inner ul {
 header .util-menu .inner ul li {
   margin: 5px;
 }
+header .util-menu .inner ul .company a {
+  color: #8b8b8b;
+}
 
+header .util-menu .inner ul .company a::after {
+  content: "   l";
+}
 .main-menu {
 }
 
 .main-menu .inner {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   justify-content: space-between;
-  margin-top: -40px;
+  margin-top: 0px;
 }
 
 .main-menu .inner .logo {
@@ -67,8 +78,9 @@ main {
 }
 
 main section .news1 img {
-  margin-top: 123px;
+  display: block;
   width: 100%;
+  padding-top: 120px;
 }
 
 main .box1 {
@@ -76,23 +88,29 @@ main .box1 {
 }
 
 main .box1 .news2 {
-  background-color: yellow;
+  background: url(../../../html/img/main_sec1.jpg) no-repeat;
+  background-size: cover;
+  background-position: 60%;
+  height: 320px;
   width: 50%;
-  height: 200px;
-  font-size: 40px;
 }
 
 main .box1 .news2 dh {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 50px;
+  width: 100%;
+  display: inline-block;
+  margin: 5px 0 10px;
+  font-size: 40px;
   font-weight: 900;
   color: #071f60;
 }
 
 main .box1 .news3 {
-  background-color: #071f60;
+  background: url(../../../html/img/main_intro_bn.jpg) no-repeat #253f85;
+  background-size: 301px;
+  background-position: 550px center;
   width: 50%;
-  height: 200px;
-  font-size: 40px;
-  color: white;
 }
 
 main .box1 .news3 dh2 {

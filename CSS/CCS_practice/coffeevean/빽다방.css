@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "NanumBarunGothic", sans-serif;
 }
 li {
   list-style: none;
@@ -18,7 +17,6 @@ li {
 }
 
 body {
-  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
 }
 header {
   position: relative;
@@ -96,14 +94,18 @@ main .box1 .news2 {
 }
 
 main .box1 .news2 dh {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 50px;
-  width: 100%;
-  display: inline-block;
-  margin: 5px 0 10px;
-  font-size: 40px;
-  font-weight: 900;
   color: #071f60;
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  position: relative;
+  left: 300px;
+  top: 40px;
+}
+main .box1 .news2 span {
+  font-weight: bold;
+  position: relative;
+  left: 300px;
+  top: 50px;
 }
 
 main .box1 .news3 {
@@ -114,7 +116,9 @@ main .box1 .news3 {
 }
 
 main .box1 .news3 dh2 {
-  font-weight: 900;
+  color: white;
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  font-size: 50px;
 }
 
 main section .news4 img {

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz1</title>
+  </head>
+  <body>
+    <div id="mint">민트 초코는 <span id="test">맛있다 >_<</span></div>
+
+    <h3>속성 변경해보기</h3>
+    <img src="../../html/img/pooh.png" alt="푸" width="300" id="pooh" />
+    <p>이요르</p>
+    <script>
+      // 1. 민트초코는 맛없다!! 로 변경
+      const mint = document.getElementById("mint");
+      const test = document.getElementById("test");
+      mint.innerText = "민트초코는 맛없다!!";
+
+      /*
+       2. img 태그
+         1. src 'eeyore.png' 로 변경
+         2. alt '이요르'로 변경
+         3. 가로 크기 150으로 변경
+
+      */
+
+      // const pooh = document.querySelector("#pooh");
+      const img = document.querySelector("img");
+      // pooh.getAttribute("src", "./html\img\eeyore.png");
+      img.src = "./html\img\eeyore.png";
+      // pooh.setAttribute("alt", "이요르");
+      img.alt = "이요르";
+      // pooh.setAttribute("width", "150");
+      img.setAttribute("width", "10");
+    </script>
+  </body>
+</html>

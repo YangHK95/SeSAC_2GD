@@ -165,6 +165,30 @@ main .box2 .news5 {
   height: 588.05px;
   width: 60%;
 }
+main .box2 .news5 dh{
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif; 
+  color: #071f60;
+  font-size: 40px;
+  position:relative;
+  left: 360px;
+  top: 40px;
+}
+
+main .box2 .news5 dh::after{
+  content: " ";
+  display: block;
+  margin-top: 20px;
+  height: 2px;
+  width: 50px;
+  background-color: #071f60;
+}
+
+main .box2 .news5 span{
+  position: relative;
+  font-weight: 600;
+  left: 360px;
+  top: 15px;
+}
 
 main .box2 .news6 {
   background: url(../../../html/img/main_sec4.jpg) no-repeat;

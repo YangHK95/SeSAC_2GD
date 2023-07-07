@@ -165,16 +165,16 @@ main .box2 .news5 {
   height: 588.05px;
   width: 60%;
 }
-main .box2 .news5 dh{
-  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif; 
+main .box2 .news5 dh {
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
   color: #071f60;
   font-size: 40px;
-  position:relative;
+  position: relative;
   left: 360px;
   top: 40px;
 }
 
-main .box2 .news5 dh::after{
+main .box2 .news5 dh::after {
   content: " ";
   display: block;
   margin-top: 20px;
@@ -183,7 +183,7 @@ main .box2 .news5 dh::after{
   background-color: #071f60;
 }
 
-main .box2 .news5 span{
+main .box2 .news5 span {
   position: relative;
   font-weight: 600;
   left: 360px;
@@ -196,15 +196,96 @@ main .box2 .news6 {
   width: 40%;
 }
 
+main .box2 .news6 dh {
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  color: #f1ae1d;
+  font-size: 40px;
+  position: relative;
+  left: 50px;
+  top: 40px;
+}
+
+main .box2 .news6 dh::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f1ae1d;
+  margin-top: 20px;
+}
+
+main .box2 .news6 span {
+  position: relative;
+  left: 50px;
+  font-weight: bold;
+  top: 15px;
+}
 main .box3 {
   display: flex;
 }
 
 main .box3 .news7 {
+  width: 504px;
+  height: 294px;
+  border: 2px solid #071f60;
+  margin-bottom: 10px;
+  margin-left: 330px;
+  margin-top: 10px;
+}
+
+main .box3 .container .news7 dh {
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  font-size: 30px;
+  color: #071f60;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+main .box3 .container .news7 span {
+  position: relative;
+  left: 50px;
+  top: 40px;
+  font-weight: bold;
+}
+
+main .box3 .container .news7 input {
+  position: relative;
+  left: 50px;
+  top: 180px;
+  width: 60%;
+  height: 35px;
+  border: 2px solid #071f60;
 }
 
 main .box3 .news8 {
+  width: 504px;
+  height: 296px;
+  border: 2px solid #071f60;
+  margin-bottom: 4px;
+  margin-left: 330px;
 }
-main .box3 .new9 {
-  background-image: url(../../../html/img/main_sec5.jpg);
+
+main .box3 .container .news8 dh {
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  font-size: 30px;
+  color: #071f60;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+main .box3 .container .news8 span {
+  position: relative;
+  left: 50px;
+  top: 40px;
+  font-weight: bold;
+}
+
+main .box3 .news9 {
+  background: url(../../../html/img/main_sec5.jpg) no-repeat;
+  width: 50%;
+  height: 760px;
+  margin-left: 10px;
+  margin-top: 10px;
 }

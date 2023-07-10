@@ -27,11 +27,15 @@ header .inner {
 }
 
 /* LOGO */
-header .inner i {
+header .inner .fa-igloo {
   position: absolute;
   line-height: 100px;
   font-size: 50px;
   color: white;
+}
+
+header .inner .fa-bars {
+  display: none;
 }
 
 header .inner .menu {
@@ -63,12 +67,28 @@ header .small-menu li {
   header .inner .menu {
     display: none;
   }
-  header .inner i {
+  header .inner .fa-igloo {
     font-size: 30px;
     left: 50%;
     transform: translate(-50%);
   }
-  header .small-menu {
+
+  header .inner .fa-bars {
+    display: block;
+    line-height: 100px;
+    font-size: 30px;
+    position: relative;
+    left: 90%;
+  }
+  header .inner .fa-bars:hover {
+    cursor: pointer;
+  }
+
+  /* header .small-menu {
+    display: block;
+  } */
+
+  header .click {
     display: block;
   }
 

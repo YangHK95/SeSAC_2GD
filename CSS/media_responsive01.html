@@ -14,6 +14,7 @@
     <header>
       <div class="inner">
         <i class="fa-solid fa-igloo"></i>
+        <i class="fa-solid fa-bars"></i>
         <ul class="menu">
           <li>메뉴1</li>
           <li>메뉴2</li>
@@ -30,4 +31,12 @@
       </ul>
     </header>
   </body>
+  <script>
+    const faBars = document.querySelector(".fa-bars");
+    const smallMenu = document.querySelector(".small-menu");
+    faBars.addEventListener("click", function () {
+      // smallMenu.setAttribute("style", "display:block;");
+      smallMenu.classList.toggle("click");
+    });
+  </script>
 </html>

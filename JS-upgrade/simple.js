@@ -192,6 +192,7 @@ console.log(addNumber2(1, 2, 3, 100, 5));
 const result = addNumber2(1, 2, 3, 4, 5, 6, 7, 8, 9);
 console.log(result);
 
+//
 function introduce(name, like = "빵", hate, gootAt) {
   console.log(`내 이름은 ${name}입니다`);
   console.log(`좋아하는 것은 ${like}입니다`);

@@ -75,3 +75,37 @@ class Shape {
 }
 let recl = new Shape(3, 4);
 console.log(recl.getArea());
+
+//실습3
+class Rectangle extends Shape {
+  getDiagonal() {
+    return Math.sqrt(this.width ** 2 + this.height ** 2);
+  }
+}
+const recl2 = new Rectangle(6, 8);
+console.log(recl2.getDiagonal());
+console.log(recl2.getArea());
+
+// Triangle 클래스
+class Triangle extends Shape {
+  //overring
+  //함수의 이름은 같지만 기능은 다르게 쓰고 싶을 때
+  getArea() {
+    return (this.width * this.height) / 2;
+  }
+}
+const recl3 = new Triangle(10, 8);
+console.log(recl3.getArea());
+
+class Circcle extends Shape {
+  constructor(width, height, radius) {
+    super(width, height);
+    this.radius = radius;
+  }
+  getArea() {
+    return this.radius ** 2 * Math.PI;
+  }
+}
+
+const recl4 = new Circcle(1, 1, 5);
+console.log(recl4.getArea());

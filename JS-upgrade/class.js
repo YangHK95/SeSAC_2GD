@@ -62,3 +62,16 @@ console.log(apt1.getAptInfo());
 apt1.getAge();
 // apt1.getWindow();
 console.log(apt1.getWindow());
+
+//실습2
+class Shape {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  getArea() {
+    return this.width * this.height;
+  }
+}
+let recl = new Shape(3, 4);
+console.log(recl.getArea());

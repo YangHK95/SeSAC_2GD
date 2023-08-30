@@ -7,8 +7,19 @@ import PracticeState from "./components/practice/PracticeState.jsx";
 import FunctionProps from "./components/FunctionProps";
 import PracticeProps from "./components/practice/PracticeProps.jsx";
 import { ClassProps, ClassProps2 } from "./components/practice/ClasspProps";
+import React from "react";
+import test from "./components/test";
+import Handler from "./ex/Handler_ex";
+import Handler_ex from "./ex/Handler_ex";
 
 function App() {
+  function test(text) {
+    console.log(text);
+  }
+  const handleClick = (e) => {
+    console.log(e);
+    e.preventDefault();
+  };
   return (
     <div>
       <UseJSX></UseJSX>
@@ -32,6 +43,17 @@ function App() {
         color="#0186cb"
       ></ClassProps>
       <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095"></ClassProps2>
+
+      <>
+        <div>dd</div>
+      </>
+      <>
+        <button onClick={test}>버튼</button>
+        <a href="https://naver.com" onClick={handleClick}>
+          a 태그입니다.
+        </a>
+      </>
+      <Handler_ex></Handler_ex>
     </div>
   );
 }

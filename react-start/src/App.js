@@ -7,10 +7,17 @@ import PracticeState from "./components/practice/PracticeState.jsx";
 import FunctionProps from "./components/FunctionProps";
 import PracticeProps from "./components/practice/PracticeProps.jsx";
 import { ClassProps, ClassProps2 } from "./components/practice/ClasspProps";
-import React from "react";
 import test from "./components/test";
 import Handler from "./ex/Handler_ex";
 import Handler_ex from "./ex/Handler_ex";
+import DOMComponent from "./components/DOMCompenet";
+import DOMCompenet_practice from "./components/practice/DOMCompent_practice";
+import { useState } from "react";
+import DOMCompenet_practice2 from "./components/practice/DOMCompent_practice2";
+import RefVarState from "./components/RefVarState";
+import EffectComponent from "./EffectComponent";
+import TimerComponent from "./TimerComponent";
+import TimerComponent_pra from "./components/practice/TimerComponent_pra";
 
 function App() {
   function test(text) {
@@ -20,6 +27,8 @@ function App() {
     console.log(e);
     e.preventDefault();
   };
+  const [show, setShow] = useState(true);
+  const [show2, setShow2] = useState(true);
   return (
     <div>
       <UseJSX></UseJSX>
@@ -54,6 +63,30 @@ function App() {
         </a>
       </>
       <Handler_ex></Handler_ex>
+      <DOMComponent></DOMComponent>
+      <DOMComponent></DOMComponent>
+      <DOMComponent></DOMComponent>
+      <DOMCompenet_practice></DOMCompenet_practice>
+      <DOMCompenet_practice2></DOMCompenet_practice2>
+      <RefVarState></RefVarState>
+      <EffectComponent></EffectComponent>
+      {show && <TimerComponent></TimerComponent>}
+      <button
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        버튼
+      </button>
+      <br></br>
+      {show2 && <TimerComponent_pra></TimerComponent_pra>}
+      <button
+        onClick={() => {
+          setShow2(!show2);
+        }}
+      >
+        {show2 ? "보이기" : "숨기기"}
+      </button>
     </div>
   );
 }

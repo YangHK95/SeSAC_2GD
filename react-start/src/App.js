@@ -25,6 +25,9 @@ import PororoObj from "./components/practice/PororoObj";
 import BasicCss from "./components/BasicCss";
 import UseScss from "./components/UseScss";
 import UseMemoObj from "./components/05_UseMemoObj";
+import UseCallback from "./components/06_UseCallback";
+import UseReducer from "./components/07_UseReducer";
+import ContextTheme from "./components/08_ContextTheme";
 
 function App() {
   function test(text) {
@@ -107,6 +110,9 @@ function App() {
       {/* <BasicCss color={"blue"}></BasicCss> */}
       {/* <UseScss></UseScss> */}
       <UseMemoObj></UseMemoObj>
+      <UseCallback></UseCallback>
+      <UseReducer></UseReducer>
+      <ContextTheme></ContextTheme>
     </div>
   );
 }

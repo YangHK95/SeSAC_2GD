@@ -18,7 +18,7 @@ export default function TodoList() {
   };
 
   return (
-    <>
+    <section className="todo">
       <h1>TodoList</h1>
       <div>
         <input
@@ -51,6 +51,6 @@ export default function TodoList() {
           );
         })}
       </ul>
-    </>
+    </section>
   );
 }

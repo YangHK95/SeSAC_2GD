@@ -6,12 +6,12 @@ export default function DoneList() {
   );
 
   return (
-    <>
+    <section className="done">
       <h1>DoneList</h1>
       {list.length === 0 && <span>완료 목록이 비어있습니다.</span>}
       {list.map((el) => {
         return <li key={el.id}>{el.text}</li>;
       })}
-    </>
+    </section>
   );
 }

@@ -1,11 +1,11 @@
 import DoneList from "./DoneList";
 import TodoList from "./TodoList";
-
-export default function ListContainer(){
-  return(
-    <>
+import "../scss/main.scss";
+export default function ListContainer() {
+  return (
+    <main>
       <TodoList></TodoList>
       <DoneList></DoneList>
-    </>
-  )
+    </main>
+  );
 }

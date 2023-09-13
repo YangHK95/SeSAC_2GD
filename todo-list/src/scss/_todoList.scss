@@ -1,0 +1,15 @@
+&.todo {
+  border: 1px;
+  background-color: yellow;
+  width: 500px;
+  div {
+    display: flex;
+  }
+  button {
+    background-color: yellowgreen;
+    border-radius: 10px;
+  }
+  input {
+    border-radius: 10px;
+  }
+}
